@@ -10,6 +10,7 @@ export default {
       navBg: "var(--navBg)",
       navText: "var(--navText)",
       navTextHover: "var(--navTextHover)",
+      active: "var(--active)",
 
       ...colors,
     },

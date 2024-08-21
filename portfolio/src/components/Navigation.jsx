@@ -1,6 +1,3 @@
-import linkedIn from "/linkedIn.svg";
-import github from "/github.svg";
-import moon from "/moon.svg";
 import LinkedIn from "./Icons/LinkedIn";
 import Github from "./Icons/Github";
 import Moon from "./Icons/Moon";

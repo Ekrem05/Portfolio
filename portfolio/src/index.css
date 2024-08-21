@@ -10,6 +10,13 @@
 * {
   font-family: Inter;
 }
+.img-conainer {
+  filter: grayscale(0);
+  clip-path: circle();
+}
+:root {
+  --active: #59c173;
+}
 .dark {
   --base: #0d0d0d;
   --secondary: #181818;
