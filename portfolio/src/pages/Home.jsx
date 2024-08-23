@@ -3,9 +3,9 @@ import LatestWork from "../components/LatestWork/LatestWork";
 
 export default function Home() {
   return (
-    <div className="min-h-[1000px]">
+    <main className="mt-32 container max-w-[1524px] w-full m-auto text-secondaryText">
       <HeroSection />
       <LatestWork />
-    </div>
+    </main>
   );
 }

@@ -7,10 +7,10 @@ export default function Navigation({ onThemeChange, theme }) {
   return (
     <header className="flex flex-col justify-center">
       <div className="w-3/5 self-center h-[320px] bg-gradient-to-r from-[#59C173] via-[#a17fe0] to-[#5D26C1] opacity-40 blur-[100px] rounded-ful  absolute "></div>
-      <nav className=" relative text-navText top-10 mx-auto z-10 w-full max-w-[1024px]">
+      <nav className=" relative text-secondaryText top-10 mx-auto z-10 w-full max-w-[1024px]">
         <ul className="flex items-center bg-navBg  py-3 px-4 justify-between rounded-2xl">
           <li>
-            <h2 className="font-bold text-lg uppercase text-navTextHover">
+            <h2 className="font-bold text-lg uppercase text-primaryText">
               Ekrem Beytula
             </h2>
           </li>

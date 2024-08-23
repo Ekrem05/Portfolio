@@ -8,8 +8,8 @@ export default {
       secondary: "var(--secondary)",
       mutedGray: "var(--mutedGray)",
       navBg: "var(--navBg)",
-      navText: "var(--navText)",
-      navTextHover: "var(--navTextHover)",
+      secondaryText: "var(--secondaryText)",
+      primaryText: "var(--primaryText)",
       active: "var(--active)",
 
       ...colors,

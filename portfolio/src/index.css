@@ -4,7 +4,7 @@
 @tailwind utilities;
 @layer components {
   .navBtn {
-    @apply hover:text-navTextHover hover:cursor-pointer transition-colors duration-150;
+    @apply hover:text-primaryText hover:cursor-pointer transition-colors duration-150;
   }
 }
 * {
@@ -22,8 +22,8 @@
   --secondary: #181818;
   --mutedGray: #808080;
   --navBg: #18181d4d;
-  --navText: #c5c5c5;
-  --navTextHover: white;
+  --secondaryText: #c5c5c5;
+  --primaryText: white;
 }
 
 .light {
@@ -31,6 +31,6 @@
   --secondary: #f6f6f6;
   --mutedGray: #17171799;
   --navBg: #ffffff40;
-  --navText: #171717b3;
-  --navTextHover: black;
+  --secondaryText: #171717b3;
+  --primaryText: black;
 }
