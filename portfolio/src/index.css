@@ -10,6 +10,9 @@
 * {
   font-family: Inter;
 }
+.nameLogo {
+  font-family: sans-serif;
+}
 .img-conainer {
   filter: grayscale(0);
   clip-path: circle();
@@ -24,6 +27,7 @@
   --navBg: #18181d4d;
   --secondaryText: #c5c5c5;
   --primaryText: white;
+  --mobileTransparent: #8080803b;
 }
 
 .light {
@@ -33,4 +37,5 @@
   --navBg: #ffffff40;
   --secondaryText: #171717b3;
   --primaryText: black;
+  --mobileTransparent: #ffffff63;
 }

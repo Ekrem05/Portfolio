@@ -4,6 +4,7 @@ import honeyZone from "/honeyZone.png";
 import sql from "/sql.png";
 
 import { FaLocationArrow } from "react-icons/fa";
+import CheckItOut from "./CheckItOut";
 
 export default function LatestWork() {
   return (
@@ -13,36 +14,54 @@ export default function LatestWork() {
           Latest work
         </h1>
       </header>
-      <ul className="flex flex-col gap-10">
-        <li className="text-primaryText grid grid-cols-2   gap-32  ">
+      <ul className="flex flex-col sm:gap-10 gap-72">
+        <li className="text-primaryText flex flex-col sm:grid grid-cols-2 px-5 gap-10 sm:gap-32 ">
           <section className="bg-secondary p-5 rounded-3xl flex flex-col">
             <div className="flex justify-start">
               <h3 className="bg-base px-3 py-1 rounded-3xl">Internship</h3>
             </div>
             <div className="flex justify-center">
-              <img src={mm1} alt="" className="w-[300px]" />
+              <img
+                src={mm1}
+                alt=""
+                className="w-[300px]  hover:cursor-pointer"
+              />
             </div>
           </section>
           <article className="flex flex-col  gap-9">
-            <h3 className="text-2xl">Mealmaster</h3>
+            <h3 className="text-2xl">Meal Master</h3>
             <p className="text-secondaryText">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure amet
-              pariatur id omnis maiores inventore. Eius eveniet accusantium
-              praesentium asperiores, aut maxime autem temporibus, suscipit,
-              ipsam repellendus nesciunt tempora eaque. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Iure amet pariatur id omnis
-              maiores inventore. Eius eveniet accusantium praesentium
-              asperiores, aut maxime autem temporibus, suscipit, ipsam
-              repellendus nesciunt tempora eaque.
+              <span className="font-extrabold">Meal Master</span> is an
+              AI-powered app available on{" "}
+              <span className="text-active">web</span>,{" "}
+              <span className="text-active">Android</span> and{" "}
+              <span className="text-active">iOS</span> that helps users discover
+              new recipes, create meals with ingredients they have on hand, and
+              generate stunning food images. My responsibilities included
+              integrating{" "}
+              <a
+                href="https://stripe.com/en-bg"
+                className="text-active underline underline-offset-2"
+              >
+                Stripe
+              </a>{" "}
+              at the back-end for secure payment and subscription functionality,
+              managing the entire front-end state using{" "}
+              <a
+                href="https://redux.js.org/"
+                className="text-active underline underline-offset-2"
+              >
+                Redux
+              </a>{" "}
+              for seamless data flow, and connecting the front-end with the
+              back-end to ensure smooth communication and operation
             </p>
             <div className="pb-2 flex justify-between border-b border-b-secondary">
               <p>Company</p>
-              <a
-                href="https://costeffective.software/"
-                className="underline text-active underline-offset-8"
-              >
-                Cost Effective Software
-              </a>
+              <CheckItOut
+                href={"https://costeffective.software/"}
+                label={" Cost Effective Software"}
+              />
             </div>
             <section className="flex flex-col gap-5">
               <h5 className="pb-2 text-xl border-b border-b-secondary">
@@ -51,7 +70,7 @@ export default function LatestWork() {
 
               <div className="pb-2 flex justify-between border-b border-b-secondary">
                 <p>Tech stack</p>
-                <div className="flex gap-1">
+                <div className="flex flex-wrap gap-1">
                   <img
                     src="https://skillicons.dev/icons?i=cs"
                     height="40"
@@ -101,15 +120,12 @@ export default function LatestWork() {
             </section>
             <footer>
               <div className="flex gap-1 items-center">
-                <a href="" className="text-active underline underline-offset-8">
-                  Check it out
-                </a>
-                <FaLocationArrow className="text-active" />
+                <CheckItOut href={""} label={"Check it out"} />
               </div>
             </footer>
           </article>
         </li>
-        <li className="text-primaryText grid grid-cols-2   gap-32  ">
+        <li className="text-primaryText  flex flex-col sm:grid grid-cols-2   gap-10 sm:gap-32 ">
           <section className="bg-secondary p-5 rounded-3xl flex flex-col">
             <div className="flex justify-start">
               <h3 className="bg-base px-3 py-1 rounded-3xl">
@@ -123,14 +139,44 @@ export default function LatestWork() {
           <article className="flex flex-col  gap-9">
             <h3 className="text-2xl">Film Dive</h3>
             <p className="text-secondaryText">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure amet
-              pariatur id omnis maiores inventore. Eius eveniet accusantium
-              praesentium asperiores, aut maxime autem temporibus, suscipit,
-              ipsam repellendus nesciunt tempora eaque. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Iure amet pariatur id omnis
-              maiores inventore. Eius eveniet accusantium praesentium
-              asperiores, aut maxime autem temporibus, suscipit, ipsam
-              repellendus nesciunt tempora eaque.
+              FilmDive is an intuitive app designed to enhance the entertainment
+              experience by offering users a comprehensive overview of the
+              latest in film and television. The app features a dynamic
+              interface where users can explore trending movies, discover
+              upcoming releases, and access a curated selection of popular TV
+              series. With an extensive library of thousands of movies and TV
+              shows, FilmDive allows users to browse based on their personal
+              preferences, delve into detailed information about each title, and
+              watch trailers to make informed viewing choices. It's built with{" "}
+              <a
+                href="https://dotnet.microsoft.com/en-us/apps/aspnet"
+                className="text-active underline underline-offset-2"
+              >
+                ASP.NET Core Web Api
+              </a>{" "}
+              on the back-end and{" "}
+              <a
+                href="https://react.dev/"
+                className="text-active underline underline-offset-2"
+              >
+                React.js
+              </a>{" "}
+              as a front-end library. It utilizes JWT token authentication for
+              secure user access, with each user's data and watchlist stored in
+              a{" "}
+              <a
+                href="https://www.postgresql.org/"
+                className="text-active underline underline-offset-2"
+              >
+                PostgreSQL
+              </a>{" "}
+              database thanks to{" "}
+              <a
+                href="https://www.learndapper.com/"
+                className="text-active underline underline-offset-2"
+              >
+                Dapper
+              </a>
             </p>
 
             <section className="flex flex-col gap-5">
@@ -140,7 +186,7 @@ export default function LatestWork() {
 
               <div className="pb-2 flex justify-between border-b border-b-secondary">
                 <p>Tech stack</p>
-                <div className="flex gap-1">
+                <div className="flex flex-wrap gap-1">
                   <img
                     src="https://skillicons.dev/icons?i=cs"
                     height="40"
@@ -189,16 +235,11 @@ export default function LatestWork() {
               </div>
             </section>
             <footer>
-              <div className="flex gap-1 items-center">
-                <a href="" className="text-active underline underline-offset-8">
-                  Check it out
-                </a>
-                <FaLocationArrow className="text-active" />
-              </div>
+              <CheckItOut href={""} label={"Check it out"} />
             </footer>
           </article>
         </li>
-        <li className="text-primaryText grid grid-cols-2   gap-32  ">
+        <li className="text-primaryText  flex flex-col sm:grid  grid-cols-2   gap-10 sm:gap-32">
           <section className="bg-secondary p-5 rounded-3xl flex flex-col">
             <div className="flex justify-start">
               <h3 className="bg-base px-3 py-1 rounded-3xl">
@@ -212,14 +253,35 @@ export default function LatestWork() {
           <article className="flex flex-col  gap-9">
             <h3 className="text-2xl">Honey Zone</h3>
             <p className="text-secondaryText">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure amet
-              pariatur id omnis maiores inventore. Eius eveniet accusantium
-              praesentium asperiores, aut maxime autem temporibus, suscipit,
-              ipsam repellendus nesciunt tempora eaque. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Iure amet pariatur id omnis
-              maiores inventore. Eius eveniet accusantium praesentium
-              asperiores, aut maxime autem temporibus, suscipit, ipsam
-              repellendus nesciunt tempora eaque.
+              Honey Zone is a comprehensive{" "}
+              <a
+                href="https://dotnet.microsoft.com/en-us/apps/aspnet"
+                className="text-active underline underline-offset-2"
+              >
+                ASP.NET MVC
+              </a>{" "}
+              web application designed for the sale and management of bee
+              products. The platform provides an intuitive user interface that
+              simplifies navigation for both customers and administrators.
+              Customers can easily browse and purchase a variety of bee-related
+              products, while administrators have access to robust management
+              tools for inventory control, order processing, and customer
+              support. The application is built on a solid foundation with a{" "}
+              <a
+                href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads"
+                className="text-active underline underline-offset-2"
+              >
+                Microsoft SQL Server (MSSQL) database
+              </a>{" "}
+              or reliable data storage, Role-based authentication to ensure
+              secure and tailored access, and{" "}
+              <a
+                href="https://learn.microsoft.com/en-us/ef/"
+                className="text-active underline underline-offset-2"
+              >
+                Entity Framework
+              </a>{" "}
+              as an ORM for efficient data handling and queries.
             </p>
 
             <section className="flex flex-col gap-5">
@@ -228,7 +290,7 @@ export default function LatestWork() {
               </h5>
               <div className="pb-2 flex justify-between border-b border-b-secondary">
                 <p>Tech stack</p>
-                <div className="flex gap-1">
+                <div className="flex flex-wrap gap-1">
                   <img
                     src="https://skillicons.dev/icons?i=cs"
                     height="40"
@@ -264,10 +326,7 @@ export default function LatestWork() {
             </section>
             <footer>
               <div className="flex gap-1 items-center">
-                <a href="" className="text-active underline underline-offset-8">
-                  Check it out
-                </a>
-                <FaLocationArrow className="text-active" />
+                <CheckItOut href={""} label={"Check it out"} />
               </div>
             </footer>
           </article>

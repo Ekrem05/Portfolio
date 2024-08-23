@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navigation from "../components/Navigation";
 import { Outlet } from "react-router-dom";
+import Footer from "../components/Footer/Footer";
 export default function Layout() {
   const [theme, setTheme] = useState("dark");
   function toggleTheme() {
@@ -11,6 +12,7 @@ export default function Layout() {
     <main className={`${theme} bg-base `}>
       <Navigation onThemeChange={toggleTheme} theme={theme} />
       <Outlet />
+      <Footer />
     </main>
   );
 }

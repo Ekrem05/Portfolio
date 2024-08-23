@@ -11,10 +11,10 @@ export default {
       secondaryText: "var(--secondaryText)",
       primaryText: "var(--primaryText)",
       active: "var(--active)",
+      mobileTransparent: "var(--mobileTransparent)",
 
       ...colors,
     },
-    extend: {},
   },
   plugins: [],
 };
