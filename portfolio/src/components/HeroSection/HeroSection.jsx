@@ -11,12 +11,12 @@ export default function HerSection() {
           He provides innovative and tailored software solutions for every need
         </h3>
       </section>
-      <section className="img-conainer  xl:order-2">
+      <section className="img-container  xl:order-2">
         <img
           id="hero-img"
           src={ekrem}
           alt="Ekrem Beytula"
-          className="xl:w-[600px] md:w-[400px] w-[400px] relative left-14"
+          className="xl:w-[600px] md:w-[400px] w-[400px] relative left-10 sm:left-14"
         />
       </section>
     </section>

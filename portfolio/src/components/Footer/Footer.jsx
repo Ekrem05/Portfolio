@@ -1,22 +1,22 @@
 import { Link } from "react-router-dom";
 import Links from "./Links";
 export default function Footer() {
-  const handleMouseEnter = () => {
-    console.log("Hovered over a link");
-  };
   return (
     <footer className="relative bottom-0 pb-10 z-20 mt-32 flex flex-col gap-16 border-t border-t-mutedGray pt-10 px-4 text-primaryText bg-">
       <ul className="flex flex-col gap-16 ">
         <li className="flex flex-col gap-4">
           <h5 className="text-xl font-bold">Links</h5>
-          <Link to={""} className="text-mutedGray">
+          <Link to={"/"} className="text-mutedGray">
+            Home
+          </Link>
+          <Link to={"/about"} className="text-mutedGray">
             About
           </Link>
-          <Link to={""} className="text-mutedGray">
+          <Link to={"/education"} className="text-mutedGray">
             Education
           </Link>
-          <Link to={""} className="text-mutedGray">
-            Contacts
+          <Link to={"/contact"} className="text-mutedGray">
+            Contact
           </Link>
         </li>
         <li className="flex flex-col gap-4">

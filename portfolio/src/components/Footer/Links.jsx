@@ -9,7 +9,8 @@ export default function Links({ href, label }) {
   return (
     <div className="flex items-center gap-1 ">
       <a
-        href=""
+        href={href}
+        target="_blank"
         className="text-mutedGray"
         onMouseEnter={toggle}
         onMouseLeave={toggle}

@@ -2,14 +2,20 @@ import LinkedIn from "./Icons/LinkedIn";
 import Github from "./Icons/Github";
 import Moon from "./Icons/Moon";
 import Sun from "./Icons/Sun";
+import { Link, useNavigate, useNavigation } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
 export default function Navigation({ onThemeChange, theme }) {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   function toggleDropdown() {
     setIsOpen((prev) => !prev);
+  }
+  function handleClick(route) {
+    setIsOpen(false);
+    navigate(route);
   }
   return (
     <header className=" sm:flex flex-col justify-center">
@@ -23,10 +29,18 @@ export default function Navigation({ onThemeChange, theme }) {
           </li>
           <li className="basis-96">
             <ul className="flex justify-between text-md">
-              <li className="navBtn">Home</li>
-              <li className="navBtn">Work</li>
-              <li className="navBtn">About</li>
-              <li className="navBtn">Contact</li>
+              <Link className="navBtn" to={"/"}>
+                Home
+              </Link>
+              <Link className="navBtn" to={"/education"}>
+                Education
+              </Link>
+              <Link className="navBtn" to={"/about"}>
+                About
+              </Link>
+              <Link className="navBtn" to={"/contact"}>
+                Contact
+              </Link>
             </ul>
           </li>
           <li className="basis-28 ">
@@ -80,25 +94,40 @@ export default function Navigation({ onThemeChange, theme }) {
         >
           <li className="w-full flex justify-center">
             <ul className="flex flex-col text-center text-md w-5/6 gap-5">
-              <li className="navBtn bg-mobileTransparent text-primaryText py-3 rounded-lg">
+              <h4
+                className="navBtn bg-mobileTransparent text-primaryText py-3 rounded-lg"
+                onClick={() => handleClick("/")}
+              >
                 Home
-              </li>
-              <li className="navBtn bg-mobileTransparent text-primaryText py-3 rounded-lg">
-                Work
-              </li>
-              <li className="navBtn bg-mobileTransparent text-primaryText py-3 rounded-lg">
+              </h4>
+              <h4
+                className="navBtn bg-mobileTransparent text-primaryText py-3 rounded-lg"
+                onClick={() => handleClick("/education")}
+              >
+                Education
+              </h4>
+              <h4
+                className="navBtn bg-mobileTransparent text-primaryText py-3 rounded-lg"
+                onClick={() => handleClick("/about")}
+              >
                 About
-              </li>
-              <li className="navBtn bg-mobileTransparent text-primaryText py-3 rounded-lg">
+              </h4>
+              <h4
+                className="navBtn bg-mobileTransparent text-primaryText py-3 rounded-lg"
+                onClick={() => handleClick("/contact")}
+              >
                 Contact
-              </li>
-              <li className="navBtn bg-mobileTransparent text-primaryText py-3 rounded-lg">
+              </h4>
+              <li
+                className="navBtn bg-mobileTransparent text-primaryText py-3 rounded-lg"
+                onClick={onThemeChange}
+              >
                 {theme === "dark" ? "Theme: Dark" : "Theme: Light"}
               </li>
             </ul>
           </li>
 
-          <li className="navBtn" onClick={onThemeChange}></li>
+          <li className="navBtn"></li>
         </ul>
       </nav>
     </header>

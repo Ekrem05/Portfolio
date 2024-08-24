@@ -4,16 +4,17 @@
 @tailwind utilities;
 @layer components {
   .navBtn {
-    @apply hover:text-primaryText hover:cursor-pointer transition-colors duration-150;
+    @apply hover:text-primaryText hover:cursor-pointer;
   }
 }
-* {
+main {
   font-family: Inter;
+  transition-duration: 800ms;
 }
 .nameLogo {
   font-family: sans-serif;
 }
-.img-conainer {
+.img-container {
   filter: grayscale(0);
   clip-path: circle();
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
-export default function CheckItOut({ href, label }) {
+import { Link } from "react-router-dom";
+export default function CheckItOut({ href, label, page }) {
   const [isHovering, setIsHover] = useState(false);
 
   function toggle() {
@@ -8,14 +9,26 @@ export default function CheckItOut({ href, label }) {
   }
   return (
     <div className="flex gap-1 items-center">
-      <a
-        href=""
-        className="text-active underline underline-offset-8"
-        onMouseEnter={toggle}
-        onMouseLeave={toggle}
-      >
-        {label}
-      </a>
+      {href ? (
+        <a
+          href={href}
+          className="text-active underline underline-offset-8"
+          onMouseEnter={toggle}
+          onMouseLeave={toggle}
+        >
+          {label}
+        </a>
+      ) : (
+        <Link
+          to={page}
+          className="text-active underline underline-offset-8"
+          onMouseEnter={toggle}
+          onMouseLeave={toggle}
+        >
+          {label}
+        </Link>
+      )}
+
       <MdArrowOutward
         className={`text-active duration-200 ${
           isHovering

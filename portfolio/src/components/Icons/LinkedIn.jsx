@@ -1,6 +1,12 @@
 export default function LinkedIn() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      className=""
+    >
       <g clip-path="url(#LinkedIn_svg__a)">
         <path
           fill="currentColor"

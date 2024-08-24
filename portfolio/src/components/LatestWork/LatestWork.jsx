@@ -10,9 +10,9 @@ export default function LatestWork() {
   return (
     <section className="mt-64 flex flex-col gap-10">
       <header>
-        <h1 className="text-[70px] text-primaryText font-extrabold">
+        <h2 className="text-[70px] text-primaryText font-extrabold">
           Latest work
-        </h1>
+        </h2>
       </header>
       <ul className="flex flex-col sm:gap-10 gap-72">
         <li className="text-primaryText flex flex-col sm:grid grid-cols-2 px-5 gap-10 sm:gap-32 ">
