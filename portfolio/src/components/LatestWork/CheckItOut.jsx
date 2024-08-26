@@ -11,6 +11,7 @@ export default function CheckItOut({ href, label, page, download }) {
     <div className="flex gap-1 items-center">
       {href ? (
         <a
+          target="_blank"
           href={href}
           className="text-active underline underline-offset-8"
           onMouseEnter={toggle}

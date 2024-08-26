@@ -47,12 +47,17 @@ export default function Navigation({ onThemeChange, theme }) {
             <ul className="flex gap-3">
               <li className="flex  gap-2">
                 <a
+                  target="_blank"
                   className="navBtn"
                   href="https://www.linkedin.com/in/ekrem-beytula-5b010b263/"
                 >
                   <LinkedIn />
                 </a>
-                <a className="navBtn" href="https://github.com/Ekrem05">
+                <a
+                  className="navBtn"
+                  target="_blank"
+                  href="https://github.com/Ekrem05"
+                >
                   <Github />
                 </a>
               </li>
