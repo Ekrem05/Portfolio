@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
-export default function CheckItOut({ href, label, page }) {
+export default function CheckItOut({ href, label, page, download }) {
   const [isHovering, setIsHover] = useState(false);
 
   function toggle() {
@@ -15,6 +15,7 @@ export default function CheckItOut({ href, label, page }) {
           className="text-active underline underline-offset-8"
           onMouseEnter={toggle}
           onMouseLeave={toggle}
+          download={download}
         >
           {label}
         </a>

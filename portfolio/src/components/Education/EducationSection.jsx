@@ -28,9 +28,6 @@ export default function EducationSection() {
                 <p>2019-2024</p>
               </div>
             </div>
-            <h4 className="text-active">
-              Grade: <span>5.55</span>
-            </h4>
           </section>
         </li>
         <li className="flex flex-col bg-secondary px-10 py-8 rounded-lg">
@@ -45,12 +42,9 @@ export default function EducationSection() {
                 <p>2022-2024</p>
               </div>
             </div>
-            <h4 className="text-active">
-              Avg. Grade: <span>6.00</span>
-            </h4>
           </section>
         </li>
-        <li className="flex flex-col sm:min-h-[263.7px] bg-secondary px-10 py-8 rounded-lg">
+        <li className="flex flex-col sm:min-h-[205.99px] bg-secondary px-10 py-8 rounded-lg">
           <section className="flex flex-col gap-8">
             <div className="flex flex-col gap-5">
               <div className="flex items-center gap-3">

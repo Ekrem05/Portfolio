@@ -4,11 +4,11 @@ export default function HerSection() {
     <section className="flex xl:flex-row flex-col justify-center items-center">
       <section className="basis-[45%] flex flex-col text-center xl:text-start xl:block order-2 xl:order-1">
         <h1 className="xl:text-[70px] md:text-[50px] text-[46px]  text-primaryText font-extrabold ">
-          Ekrem is a <span className="text-active">full-stack developer </span>{" "}
-          based in Bulgaria
+          I'm a <span className="text-active">full-stack developer </span> based
+          in Bulgaria
         </h1>
         <h3 className="xl:text-xl md:text-[1rem]">
-          He provides innovative and tailored software solutions for every need
+          I provide innovative and tailored software solutions for every need
         </h3>
       </section>
       <section className="img-container  xl:order-2">

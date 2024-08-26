@@ -32,13 +32,10 @@ export default function LatestWork() {
             <h3 className="text-2xl">Meal Master</h3>
             <p className="text-secondaryText">
               <span className="font-extrabold">Meal Master</span> is an
-              AI-powered app available on{" "}
-              <span className="text-active">web</span>,{" "}
-              <span className="text-active">Android</span> and{" "}
-              <span className="text-active">iOS</span> that helps users discover
-              new recipes, create meals with ingredients they have on hand, and
-              generate stunning food images. My responsibilities included
-              integrating{" "}
+              AI-powered app available on web, Android and iOS that helps users
+              discover new recipes, create meals with ingredients they have on
+              hand, and generate stunning food images. My responsibilities
+              included integrating{" "}
               <a
                 href="https://stripe.com/en-bg"
                 className="text-active underline underline-offset-2"
@@ -120,7 +117,10 @@ export default function LatestWork() {
             </section>
             <footer>
               <div className="flex gap-1 items-center">
-                <CheckItOut href={""} label={"Check it out"} />
+                <CheckItOut
+                  href={"https://www.mealmasterbot.com/"}
+                  label={"Check it out"}
+                />
               </div>
             </footer>
           </article>
@@ -139,15 +139,16 @@ export default function LatestWork() {
           <article className="flex flex-col  gap-9">
             <h3 className="text-2xl">Film Dive</h3>
             <p className="text-secondaryText">
-              FilmDive is an intuitive app designed to enhance the entertainment
-              experience by offering users a comprehensive overview of the
-              latest in film and television. The app features a dynamic
-              interface where users can explore trending movies, discover
-              upcoming releases, and access a curated selection of popular TV
-              series. With an extensive library of thousands of movies and TV
-              shows, FilmDive allows users to browse based on their personal
-              preferences, delve into detailed information about each title, and
-              watch trailers to make informed viewing choices. It's built with{" "}
+              <span className="font-extrabold">FilmDive</span> is an intuitive
+              app designed to enhance the entertainment experience by offering
+              users a comprehensive overview of the latest in film and
+              television. The app features a dynamic interface where users can
+              explore trending movies, discover upcoming releases, and access a
+              curated selection of popular TV series. With an extensive library
+              of thousands of movies and TV shows, FilmDive allows users to
+              browse based on their personal preferences, delve into detailed
+              information about each title, and watch trailers to make informed
+              viewing choices. It's built with{" "}
               <a
                 href="https://dotnet.microsoft.com/en-us/apps/aspnet"
                 className="text-active underline underline-offset-2"
@@ -235,7 +236,16 @@ export default function LatestWork() {
               </div>
             </section>
             <footer>
-              <CheckItOut href={""} label={"Check it out"} />
+              <div className="flex gap-1 items-center">
+                <CheckItOut
+                  href={"https://filmdive.azurewebsites.net/"}
+                  label={"Check it out"}
+                />
+                <CheckItOut
+                  href={"https://github.com/Ekrem05/FilmDive"}
+                  label={"See on GitHub"}
+                />
+              </div>
             </footer>
           </article>
         </li>
@@ -253,7 +263,8 @@ export default function LatestWork() {
           <article className="flex flex-col  gap-9">
             <h3 className="text-2xl">Honey Zone</h3>
             <p className="text-secondaryText">
-              Honey Zone is a comprehensive{" "}
+              <span className="font-extrabold">Honey Zone</span> is a
+              comprehensive{" "}
               <a
                 href="https://dotnet.microsoft.com/en-us/apps/aspnet"
                 className="text-active underline underline-offset-2"
@@ -268,13 +279,13 @@ export default function LatestWork() {
               tools for inventory control, order processing, and customer
               support. The application is built on a solid foundation with a{" "}
               <a
-                href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads"
+                href="https://www.mysql.com/"
                 className="text-active underline underline-offset-2"
               >
-                Microsoft SQL Server (MSSQL) database
+                MySQL
               </a>{" "}
-              or reliable data storage, Role-based authentication to ensure
-              secure and tailored access, and{" "}
+              database, Role-based authentication to ensure secure and tailored
+              access, and{" "}
               <a
                 href="https://learn.microsoft.com/en-us/ef/"
                 className="text-active underline underline-offset-2"
@@ -326,7 +337,14 @@ export default function LatestWork() {
             </section>
             <footer>
               <div className="flex gap-1 items-center">
-                <CheckItOut href={""} label={"Check it out"} />
+                <CheckItOut
+                  href={"https://honeyzone.azurewebsites.net/"}
+                  label={"Check it out"}
+                />
+                <CheckItOut
+                  href={"https://github.com/Ekrem05/Honey-Zone"}
+                  label={"See on GitHub"}
+                />
               </div>
             </footer>
           </article>
