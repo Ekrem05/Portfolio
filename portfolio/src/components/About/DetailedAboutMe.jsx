@@ -1,6 +1,6 @@
 import CheckItOut from "../LatestWork/CheckItOut";
 import collage from "/collage.png";
-import cv from "/Ekrem-Byetula.pdf";
+import cv from "/Ekrem-Beytula-CV.pdf";
 export default function DetailedAbout() {
   return (
     <section className="sm:mt-64 flex flex-col gap-24">
