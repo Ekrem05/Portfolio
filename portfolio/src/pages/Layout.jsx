@@ -10,7 +10,18 @@ export default function Layout() {
   }
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
-    setTheme(savedTheme);
+    if (savedTheme === null) {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        localStorage.setItem("theme", "dark");
+        setTheme("dark");
+      } else {
+        localStorage.setItem("theme", "light");
+        setTheme("light");
+      }
+    } else {
+      localStorage.setItem("theme", savedTheme);
+      setTheme(savedTheme);
+    }
   }, []);
   return (
     <main className={`${theme} bg-base `}>
