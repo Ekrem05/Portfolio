@@ -118,7 +118,7 @@ export default function LatestWork() {
             <footer>
               <div className="flex gap-1 items-center">
                 <CheckItOut
-                  href={"https://www.mealmasterbot.com/"}
+                  href={"https://app.mealmasterbot.com/"}
                   label={"Check it out"}
                 />
               </div>
