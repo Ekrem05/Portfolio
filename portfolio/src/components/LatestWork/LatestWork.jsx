@@ -16,20 +16,21 @@ export default function LatestWork() {
       </header>
       <ul className="flex flex-col sm:gap-10 gap-72">
         <li className="text-primaryText flex flex-col sm:grid grid-cols-2 px-5 gap-10 sm:gap-32 ">
-          <section className="bg-secondary p-5 rounded-3xl flex flex-col">
+          <section
+            className="bg-secondary p-5 hover:cursor-pointer rounded-3xl flex flex-col"
+            onClick={() => window.open("https://mealmasterbot.com/", "_blank")}
+          >
             <div className="flex justify-start">
               <h3 className="bg-base px-3 py-1 rounded-3xl">Internship</h3>
             </div>
             <div className="flex justify-center">
-              <img
-                src={mm1}
-                alt=""
-                className="w-[300px]  hover:cursor-pointer"
-              />
+              <img src={mm1} alt="" className="w-[300px]  " />
             </div>
           </section>
           <article className="flex flex-col  gap-9">
-            <h3 className="text-2xl">Meal Master</h3>
+            <h3 className="text-2xl">
+              Meal Master <span className="text-xs bg-secondary">beta</span>
+            </h3>
             <p className="text-secondaryText">
               <span className="font-extrabold">Meal Master</span> is an
               AI-powered app available on web, Android and iOS that helps users
@@ -126,7 +127,12 @@ export default function LatestWork() {
           </article>
         </li>
         <li className="text-primaryText  flex flex-col sm:grid grid-cols-2   gap-10 sm:gap-32 ">
-          <section className="bg-secondary p-5 rounded-3xl flex flex-col">
+          <section
+            className="bg-secondary p-5 hover:cursor-pointer rounded-3xl flex flex-col"
+            onClick={() =>
+              window.open("https://filmdive.azurewebsites.net/", "_blank")
+            }
+          >
             <div className="flex justify-start">
               <h3 className="bg-base px-3 py-1 rounded-3xl">
                 Personal project
@@ -250,7 +256,12 @@ export default function LatestWork() {
           </article>
         </li>
         <li className="text-primaryText  flex flex-col sm:grid  grid-cols-2   gap-10 sm:gap-32">
-          <section className="bg-secondary p-5 rounded-3xl flex flex-col">
+          <section
+            className="bg-secondary p-5 hover:cursor-pointer rounded-3xl flex flex-col"
+            onClick={() =>
+              window.open("https://honeyzone.azurewebsites.net/", "_blank")
+            }
+          >
             <div className="flex justify-start">
               <h3 className="bg-base px-3 py-1 rounded-3xl">
                 Personal project
