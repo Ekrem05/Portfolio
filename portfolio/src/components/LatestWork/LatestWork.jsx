@@ -28,9 +28,7 @@ export default function LatestWork() {
             </div>
           </section>
           <article className="flex flex-col  gap-9">
-            <h3 className="text-2xl">
-              Meal Master <span className="text-xs bg-secondary">beta</span>
-            </h3>
+            <h3 className="text-2xl">Meal Master</h3>
             <p className="text-secondaryText">
               <span className="font-extrabold">Meal Master</span> is an
               AI-powered app available on web, Android and iOS that helps users
@@ -121,6 +119,10 @@ export default function LatestWork() {
                 <CheckItOut
                   href={"https://mealmasterbot.com/"}
                   label={"Check it out"}
+                />
+                <CheckItOut
+                  href={"https://github.com/InternAcademy/CookingApp"}
+                  label={"See on GitHub"}
                 />
               </div>
             </footer>
