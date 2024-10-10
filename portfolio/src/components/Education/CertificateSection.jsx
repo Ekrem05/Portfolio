@@ -11,6 +11,9 @@ import fundamentals from "/csharpfundamentals.jpg";
 import basics from "/csharpBasics.jpg";
 import react from "/React-The-Complete-Guide-certificate.jpg";
 import Certificate from "./Certificate";
+import spring from "/UC-8749dfb9-d15a-4750-9265-512344c89d4b.jpg";
+import java from "/UC-d4c83c9b-5516-493b-ad9c-61998a5ba6a9.jpg";
+
 export default function CertificateSection() {
   const [currentHover, setCurrentHover] = useState({ show: false, img: "" });
   function handleTrigger(args) {
@@ -19,6 +22,22 @@ export default function CertificateSection() {
   return (
     <>
       <ul className="list-disc flex flex-col gap-4">
+        <li>
+          <Certificate
+            href="https://www.udemy.com/certificate/UC-8749dfb9-d15a-4750-9265-512344c89d4b/"
+            label="Spring Boot & Hibernate for Beginners"
+            img={spring}
+            trigger={handleTrigger}
+          />
+        </li>
+        <li>
+          <Certificate
+            href="https://www.udemy.com/certificate/UC-7d91da5b-328f-412f-9050-003a78abb068/"
+            label="Java 17 Masterclass"
+            img={java}
+            trigger={handleTrigger}
+          />
+        </li>
         <li>
           <Certificate
             href="https://www.udemy.com/certificate/UC-7d91da5b-328f-412f-9050-003a78abb068/"

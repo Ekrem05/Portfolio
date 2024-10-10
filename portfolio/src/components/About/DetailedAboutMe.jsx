@@ -1,6 +1,6 @@
 import CheckItOut from "../LatestWork/CheckItOut";
 import collage from "/collage.png";
-import cv from "/Ekrem-Beytula-CV.pdf";
+import cv from "/Ekrem-Beytula.pdf";
 export default function DetailedAbout() {
   return (
     <section className="sm:mt-64 flex flex-col gap-24">
@@ -33,16 +33,16 @@ export default function DetailedAbout() {
             <li>
               <h4 className="font-bold text-mutedGray text-xl">What I do</h4>
               <p className="text-lg">
-                I’m currently focused on my internship project MealMaster and
-                managing several personal side projects. I'm also learning
-                Golang to broaden my skill set and explore new technologies.
-                When I’m not coding, I enjoy beekeeping on our family farm,
-                which offers a peaceful escape into nature and a chance to
-                unwind. I also enjoy hitting the gym and lifting heavy weights,
-                proving that I can handle both code and dumbbells with equal
-                enthusiasm. And if you ever see me talking to my bees about the
-                latest tech trends, don’t be surprised—they’re pretty good
-                listeners!
+                After completing my internship project, MealMaster, and spend
+                some time with Golang, I've continued to expand my skill set.
+                I'm currently learning Java, Spring Boot, and Angular, focusing
+                on mastering these technologies for my upcoming projects. When
+                I’m not coding, I enjoy beekeeping on our family farm, which
+                offers a peaceful escape into nature and a chance to unwind. I
+                also enjoy hitting the gym and lifting heavy weights, proving
+                that I can handle both code and dumbbells with equal enthusiasm.
+                And if you ever see me talking to my bees about the latest tech
+                trends, don’t be surprised—they’re pretty good listeners!
               </p>
             </li>
             <li>

@@ -62,7 +62,9 @@ export default function EducationSection() {
       </ul>
       <hr className="bg-mutedGray w-full" />
       <section className="flex flex-col gap-12">
-        <h4 className="text-2xl md:text-[50px]">Certificates</h4>
+        <h4 className="text-2xl md:text-[50px]">
+          Certificates <span className="text-sm opacity-80">Latest</span>
+        </h4>
         <CertificateSection />
       </section>
     </section>
